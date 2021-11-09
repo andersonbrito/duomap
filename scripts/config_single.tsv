@@ -1,0 +1,22 @@
+param	value	note
+unique_id1	cd_hlt_	# column containing unique id in main shapefile
+unique_id2	cd_hlt_	# column containing unique id in data file
+shape1	/Users/anderson/GLab Dropbox/Anderson Brito/codes/geoCodes/macrorregioes_saude/macro.shp	# path to the main shapefile, the one where the data points will be plotted
+shape2	/Users/anderson/GLab Dropbox/Anderson Brito/codes/geoCodes/bra_adm_ibge_2020_shp/bra_admbnda_adm1_ibge_2020.shp	# secondary shape, which will be plotted on top of shape 2
+map_type	single	# type of map: bivariate, single_variable
+xvar	total_genomes	# values to be shown in the X axis
+xbins	1, 5, 10, 50, 100, 500	# upper limit of each bin in the X axis
+yvar		# values to be shown in the X axis
+ybins		# upper limit of each bin in the X axis
+groupby	group_id	# column containing categories of data to be plotted as subplots
+colours	#daf1e2, #9fdbb3, #64c484, #3b9b5b, #246038, #0e2516	# colour scheme
+colours_blue	#b5c7e3, #89a6d2, #5c85c1, #3e66a3, #2d4a76, #1c2e4a	# colour scheme
+missing_colour	#DEDEDE	 #colour for missing values
+nrows	1	# number of rows of the multiplot
+ncols	2	# number of columns of the multiplot
+upperleft_coord	6.229315338733764, -75.54160920146641	# coordinates of the upper left point, to crop the map
+lowerright_coord	-34.29680185909136, -32.66581314238647	# coordinates of the lower right point, to crop the map
+filter		# keep or remove rows. Format: '~column_name:value'. Remove '~' to keep only that data category. Column name as in groupby
+figsize	7, 7	# figure size: width and height, in inches
+legend	True	# add legend? True or False
+output_file		# Provide a file name, and an output with classified data will be saved
