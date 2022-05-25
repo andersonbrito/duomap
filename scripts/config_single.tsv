@@ -20,3 +20,4 @@ filter		# keep or remove rows. Format: '~column_name:value'. Remove '~' to keep 
 figsize	7, 7	# figure size: width and height, in inches
 legend	True	# add legend? True or False
 output_file		# Provide a file name, and an output with classified data will be saved
+
